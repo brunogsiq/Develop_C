@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<input/>
+<button>
+    Compare com meu segredo!
+</button>
+
+<script>
+    
+    //Array de 5 números e 5 posições, inciciadas em zero = 0,1,2,3,4 = posição;
+    var segredos = [1,3,5,7,9];
+    
+
+    //Para pegar do HTML -> ("Nome_da_tag_em_html")
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica(){
+        
+    var achou = false;
+    //.lenght vai questionar o tamanho do array.
+    for( var posicao = 0; posicao < segredos.length; posicao++) {
+
+        if(input.value == segredos[posicao]) {
+
+            alert("Você acertou!!!");
+            achou = true;
+            break;
+        }
+    }
+    
+    if(achou == false) {
+        alert("Você errou!!!"); 
+    }
+    
+    input.value = "";
+    input.focus();     
+    
+    }
+    
+    var button = document.querySelector("button");
+    
+    button.onclick = verifica;
+
+</script>

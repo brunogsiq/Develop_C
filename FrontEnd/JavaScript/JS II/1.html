@@ -1,0 +1,21 @@
+/*<meta charset="utf-8">*/
+
+//Para desenhar não será necessário utilizar a chamada acima
+<canvas width="600" height="400">
+    
+</canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0,0,600,400);
+
+    pincel.fill = "yellow";
+    pincel.fillRect(0,0,200,400);
+    pincel.fill = "red";
+    pincel.fillRect(400,0,200,400);
+
+    pincel.fillStyle="blue";
+
+</script>

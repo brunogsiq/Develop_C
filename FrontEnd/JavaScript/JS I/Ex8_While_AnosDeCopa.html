@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+
+	var anoCopa = 1930;
+	var limite = parseInt(prompt("Entre com a data Limite"));
+	alert("A primeira copa foi em "+ anoCopa + ".")
+
+	while(anoCopa <= 3000){
+	
+		chamarDW("Teve Copa no Ano: "+ anoCopa);
+		anoCopa = anoCopa + 4;		
+	}
+</script>

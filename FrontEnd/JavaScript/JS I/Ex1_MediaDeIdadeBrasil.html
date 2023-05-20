@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+
+	alert("Bem vindo ao Exercício 1");
+
+	function pularLinha() {
+		
+		document.write("<br><br>");
+		
+	}
+
+	function chamarDW(frase){
+		pularLinha();
+		document.write(frase);
+		pularLinha();
+	}
+
+	var anoAtual = 2022;
+	var anoDescobrimento = 1500;
+	var idadeBrasil = anoAtual - anoDescobrimento;
+	var quantidadeDeGeracoesBrasil = idadeBrasil / 28;
+
+	chamarDW("O Brasil tem: " + idadeBrasil + " anos.");
+	chamarDW("E a quantidade de gerações de Brasileiros é um total de: " + Math.round(quantidadeDeGeracoesBrasil) + " .");
+
+
+</script>

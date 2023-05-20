@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+
+	function calcularImc( peso, altura){
+
+		return peso / (altura * altura);
+				
+	}
+
+	var nome = prompt("Qual seu nome?");
+	var pesoInf = prompt("Qual seu peso:");
+	var alturaInf = prompt("Qual sua altura:");
+
+	var imc = calcularImc(pesoInf, alturaInf);
+	
+	chamarDW(nome + ", o IMC calculado é: " + imc);
+
+	if(imc <= 18.5){
+
+		chamarDW("Abaixo do Recomenado.");
+
+	}
+
+
+	if(imc >= 18.5 && imc <= 35){
+
+		chamarDW("Dentro do Recomenado.");
+
+	}
+
+	if(imc >= 35){
+
+		chamarDW("Acima do Recomenado.");
+
+	}
+
+</script>

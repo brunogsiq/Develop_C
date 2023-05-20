@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pularLinha (){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostrarDW (frase){
+
+		document.write(frase);
+		pularLinha();
+	} 
+
+	var vitoria = parseInt(prompt("Entre com o número de Vitorias: "));
+
+	var empate = parseInt(prompt("Entre com o número de Empates: "));
+
+	var pontos = (vitoria * 3 )+ empate;
+
+	mostrarDW("Os pontos do seu time é:" + pontos);
+
+	if(pontos > 20){
+
+		mostrarDW("Seu time está melhor que o ano passado.");
+	
+	}
+	
+		if(pontos < 20) {	
+
+			mostrarDW("Seu time está pior que o ano passado.");
+
+		}
+
+		
+			if(pontos == 20){
+
+				mostrarDW("Seu time está igual ao ano passado")
+
+			}
+
+	mostrarDW("Fim.");
+
+</script>

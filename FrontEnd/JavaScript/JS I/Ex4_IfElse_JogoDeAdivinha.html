@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	var chute = parseInt(prompt("Digite seu chute entre 1 e 10:"));
+
+	if(chute == numeroPensado){
+
+		chamarDW("Você acertou!!!");
+
+	}
+
+	else{
+
+		chamarDW("Você Errou!!! O número é: " + numeroPensado);
+
+	}
+
+	
+</script>

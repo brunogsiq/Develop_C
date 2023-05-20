@@ -1,0 +1,45 @@
+<script>
+
+    function pularLinha () {
+
+        document.write("<br><br>")
+                
+    }
+
+    function chamarDW (frase) {
+
+        document.write(frase)
+
+    }
+
+    var idadeA = 28;
+    var idadeB = 32;
+    var idadeC = 60;
+    var idadeD = 24;
+
+    var total_Idade = idadeA + idadeB + idadeC + idadeD;
+    var media_Idade = total_Idade / 4;
+    
+    chamarDW (media_Idade);
+    pularLinha();
+
+    // Ou //
+
+
+    var total_de_familiares = parseInt(prompt("Quantos são os familiares ?"));
+    var contador = 1;
+    var total_idade_2 = 0;
+
+    while(contador <= total_de_familiares){
+        var idadeE = parseInt(prompt("Informe a idade do familiar " + contador));    
+        total_idade_2 = total_idade_2 + idadeE;
+        contador++;    
+
+    }
+
+    var media_idade_2 = total_idade_2 / total_de_familiares;
+    chamarDW(media_idade_2);
+    pularLinha();
+    chamarDW("Fim.");
+
+</script>

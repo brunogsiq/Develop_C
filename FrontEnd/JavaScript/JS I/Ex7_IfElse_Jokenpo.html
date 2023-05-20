@@ -1,0 +1,85 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+	function sortear(n ){
+
+		return Math.round(Math.random() * n);
+
+	}	
+
+	var numeroPensado = sortear(3);
+
+	var chute = parseInt(prompt("Qual número acreditar ter sorteado:"));
+
+	if(chute == 1 && numeroPensado == 1){
+
+		chamarDW("Você escolheu Pedra. Pedra empata com Pedra.");
+
+	}
+
+	if(chute == 1 && numeroPensado == 2){
+
+		chamarDW("Você escolheu Pedra. Pedra ganha de Tesoura.");
+
+	}
+
+	
+	if(chute == 1 && numeroPensado == 3){
+
+		chamarDW("Você escolheu Pedra. Pedra perde de Papel.");
+
+	}
+
+	if(chute == 2 && numeroPensado == 2){
+
+		chamarDW("Você escolheu Tesoura. Tesoura empata com Tesoura.");
+
+	}
+
+	if(chute == 2 && numeroPensado == 1){
+
+		chamarDW("Você escolheu Pedra. Tesoura perder de Pedra.");
+
+	}
+
+	
+	if(chute == 2 && numeroPensado == 3){
+
+		chamarDW("Você escolheu Pedra. Tesoura ganha de Papel.");
+
+	}
+
+	if(chute == 3 && numeroPensado == 3){
+
+		chamarDW("Você escolheu Tesoura. Papel empata com Papel.");
+
+	}
+
+	if(chute == 3 && numeroPensado == 1){
+
+		chamarDW("Você escolheu Pedra. Papel ganha de Pedra.");
+
+	}
+
+	
+	if(chute == 3 && numeroPensado == 2){
+
+		chamarDW("Você escolheu Pedra. Papel perde de Tesoura.");
+
+	}
+
+
+</script>

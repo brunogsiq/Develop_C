@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<script>
+
+    function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+    var numero = parseInt(prompt("Quantas linhas desejas inserir? "));
+    var asterisco = parseInt(prompt("Quantos asteriscos deseja inserir? "));
+  //for( var = inicialização; condição; incremento);
+    for (var linha = 1; linha <= numero; linha++){
+
+        for (var coluna = 1; coluna <= 10; coluna++){        
+            
+            document.write("*");
+        }
+        
+        pularLinha();
+    }
+
+</script>
+	

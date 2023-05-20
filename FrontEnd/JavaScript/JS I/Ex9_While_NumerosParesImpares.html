@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+	
+	var limite = parseInt(prompt("Digite até que numero deseja saber: "));
+	var numero_dois = 0;
+	var numero_um = 1;
+
+
+	while(numero_dois <= limite){
+
+		chamarDW("Já os numeros Pares são:<br>" + numero_dois);
+		numero_dois = numero_dois + 2;
+	}
+
+	pularLinha();
+
+	while(numero_um <= limite){
+
+		chamarDW("Já os numeros Impares são:<br>" + numero_um);
+		numero_um = numero_um + 2;
+	
+	}	
+	
+</script>

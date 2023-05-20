@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+
+<script>
+
+    function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+	chamarDW("OPÇÃO COM ESTRUTURA DE REPETIÇÃO");
+
+	var numeroPensado2 = Math.round(Math.random() * 10);
+	
+	var tentativa = 1;
+
+	while( tentativa <= 3 ){
+
+        var chute2 = parseInt(prompt("Digite seu chute entre 1 e 10: "));
+
+		if(chute2 == numeroPensado2){
+            
+			chamarDW("Você acertou!!!");
+            break;
+            
+		}
+	
+		else{
+	
+			chamarDW("Você Errou!!!");
+		}	
+
+		tentativa++;
+
+	}
+
+    chamarDW("Fim.");
+
+</script>
+	

@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<script >
+	
+	function pularLinha( ) {
+
+		document.write("<br><br>");
+	
+	}
+
+	function chamarDW(frase){
+
+		document.write(frase);
+		pularLinha();
+	}
+
+	function sortear(n){
+
+		return Math.round(Math.random() * n);
+
+	}	
+
+	var numeroPensado = sortear(10);
+
+	var chute = parseInt(prompt("Qual número acreditar ter sorteado:"));
+
+	if(chute == numeroPensado){
+
+		chamarDW("Você acertou!!! O número é:" + numeroPensado);
+
+	}
+
+	else{
+
+		chamarDW("Você Errou!!! O número é: " + numeroPensado);
+
+	}
+
+</script>

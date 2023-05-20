@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pularLinha() {
+		
+		document.write("<br><br>");
+
+	}
+
+	function chamarDW (frase) {
+
+		document.write(frase);
+		pularLinha();
+	}
+
+	var numero = 20;
+	var limite = parseInt(prompt("Digite o Limte do cálculo: ")); 
+	
+	while(numero >= limite ){
+
+		chamarDW(numero + " - " + (numero = numero - 1));
+		numero = numero - 1;
+		
+	}
+
+	chamarDW("Fim");
+
+</script>

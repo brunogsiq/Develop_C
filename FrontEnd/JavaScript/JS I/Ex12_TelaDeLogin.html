@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pularLinha() {
+		
+		document.write("<br><br>");
+
+	}
+
+	function chamarDW (frase) {
+
+		document.write(frase);
+		pularLinha();
+
+	}
+
+	alert("Olá");
+
+	var loginReg = "Admin";
+	var senhaReg = "Senha123";
+	var tentativaLogin = 1;
+	var tentativaSenha = 1;
+
+	var loginInf = prompt("Digite seu login: ");
+	
+	if(loginInf == loginReg ){
+
+		chamarDW("Login Existente");
+	
+		/*if (loginInf != loginReg && tentativa < 3){
+
+		chamarDW(prompt("Digite Seu Login: "));
+		tentativa = tentativa + 1;
+
+			else if(tentativa == 3){
+
+				chamarDW("Sistema Bloqueado.");		
+			}
+		}*/		
+
+	}
+
+	var senhaInf = prompt("Digite sua senha: ");
+
+	if(senhaInf == senhaReg){
+
+		chamarDW("Senha Correta.")
+
+	}
+
+	while (senhaInf != senhaReg && tentativaSenha < 3){
+
+		chamarDW(prompt("Repita sua senha"));
+		tentativaSenha = tentativaSenha + 1;
+
+	}
+
+	if (tentativaSenha == 3) {
+
+		chamarDW("ACESSO BLOQUEADO");
+
+	}
+
+	alert("Seja bem vindo.");
+	
+
+
+</script>

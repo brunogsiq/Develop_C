@@ -1,1 +1,0 @@
-# Dev_Prac_C_Rock_Paper_Scissors_Jokenpo
